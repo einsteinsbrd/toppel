@@ -52,7 +52,7 @@ docker-compose up
 
 ## Rebuilding Project
 ```
-docker stop
+docker stop $(docker ps -a -q)
 docker system prune -af
 docker-compose up
 ```
