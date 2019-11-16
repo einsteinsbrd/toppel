@@ -1,6 +1,6 @@
 # Toppel - Online RPG Manager
 ## Description
-Toppel is an ongoing project to build a web application used supplement RPGs.  It incorperates container technology and modern web frameworks to allow advanced robust UI/UX and easy portability.  Ultimately it should be able to be easily deployable to Heroku or AWS.
+Toppel is an ongoing project to build a web application used to supplement RPGs.  It incorporates container technology and modern web frameworks to allow advanced robust UI/UX and easy portability.  Ultimately it should be able to be easily deployable to Heroku or AWS.
 
 ## Build Directions
 ### Dependencies
