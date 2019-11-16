@@ -1,7 +1,6 @@
 # Toppel - Online RPG Manager
 
 ## Build Directions
----
 ### Dependencies
 The project is built using Docker which simplifies the host dependency requirements.  You'll want to install Docker using the preferred method for your operating system.  Here are some examples:
 
@@ -52,7 +51,6 @@ docker-compose up
 ```
 
 ## Rebuilding Project
----
 ```
 docker stop
 docker system prune -af
