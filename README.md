@@ -13,7 +13,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu <codename> stable"
 sudo apt install docker-ce docker-compose
 ```
-**__NOTE:__** Replace "codename" and carrots with your OS codename(xenial, bionic, etc)
+**__NOTE:__** Replace `<codename>` with your OS codename(xenial, bionic, etc)
 ##### YUM (Pre 8 CENTOS and RHEL)
 ```
 sudo yum-utils device-mapper-persistent-data lvm2 epel-release
