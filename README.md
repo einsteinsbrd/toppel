@@ -44,13 +44,14 @@ sudo systemctl start docker
 ```
 git clone https://gitlab.com/jardon/toppel.git /path/to/desired/destination
 ```
-**__NOTE:__** You can ommit the path if you want to clone it to the current directory
+**__NOTE:__** You can omit the path if you want to clone it to the current directory
 
 ### Run Instance
 ```
 cd /path/to/cloned/repo
-docker-compose up
+docker-compose up -d
 ```
+**__NOTE:__** You can omit the `-d` flag if you do not want to run detached.
 
 ## Rebuilding Project
 ```
