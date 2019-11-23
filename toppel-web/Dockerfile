@@ -1,8 +1,8 @@
 FROM centos:8
 
-RUN dnf install npm
+RUN dnf install npm -y
 
-COPY toppel/*
-COPY package.json
+COPY toppel/ /app/
 
-ENTRYPOINT npm start
+ENTRYPOINT cd /app/ && npm start
+
