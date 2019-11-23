@@ -53,6 +53,10 @@ docker-compose up -d
 ```
 **__NOTE:__** You can omit the `-d` flag if you do not want to run detached.
 
+## Connecting to the Application
+
+The project is currently configured to forward port 3000 of the web application container to the host.  You should be able to access the application by pointing your web browser to `localhost:3000`
+
 ## Rebuilding Project
 ```
 docker stop $(docker ps -a -q)
