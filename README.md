@@ -61,4 +61,5 @@ The project is currently configured to forward port 3000 of the web application 
 ```
 docker stop $(docker ps -a -q)
 docker-compose build
+docker-compose up
 ```
