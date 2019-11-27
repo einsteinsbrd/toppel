@@ -8,25 +8,25 @@ The project is built using Docker which simplifies the host dependency requireme
 
 #### Linux:
 ##### APT (Ubuntu, Debian, Elementary, Deepin, etc)
-```
+```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu <codename> stable"
 sudo apt install docker-ce docker-compose
 ```
 **__NOTE:__** Replace `<codename>` with your OS codename(xenial, bionic, etc)
 ##### YUM (Pre 8 CENTOS and RHEL)
-```
+```bash
 sudo yum-utils device-mapper-persistent-data lvm2 epel-release
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 sudo yum install docker-ce docker-compose
 ```
 ##### DNF (8+ CENTOS and RHEL, FEDORA)
-```
+```bash
 sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
 sudo dnf install docker-ce docker-compose
 ```
 ##### PACMAN (Arch, Manjaro)
-```
+```bash
 sudo pacman -Sy docker docker-compose
 ```
 You will probably want to **add your user to the docker group** to avoid having to use sudo for everything.  You can do that by using the command `sudo usermod -aG docker $(whoami)`
@@ -36,18 +36,18 @@ You will probably want to **add your user to the docker group** to avoid having 
 ### Host Configuration
 
 #### Enable Docker
-```
+```bash
 sudo systemctl enable docker
 sudo systemctl start docker
 ```
 #### Clone Repository
-```
+```bash
 git clone https://gitlab.com/jardon/toppel.git /path/to/desired/destination
 ```
 **__NOTE:__** You can omit the path if you want to clone it to the current directory
 
 ### Run Instance
-```
+```bash
 cd /path/to/cloned/repo
 docker-compose up -d
 ```
@@ -58,7 +58,7 @@ docker-compose up -d
 The project is currently configured to forward port 3000 of the web application container to the host.  You should be able to access the application by pointing your web browser to `localhost:3000`
 
 ## Rebuilding Project
-```
+```bash
 docker stop $(docker ps -a -q)
 docker-compose build
 docker-compose up
