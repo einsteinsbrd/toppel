@@ -6,26 +6,25 @@ Toppel is an ongoing project to build a web application used to supplement RPGs.
 ### Dependencies
 The project is built using Docker which simplifies the host dependency requirements.  You'll want to install Docker using the preferred method for your operating system.  Here are some examples:
 
-#### Linux:
-##### APT (Ubuntu, Debian, Elementary, Deepin, etc)
+#### APT (Ubuntu, Debian, Elementary, Deepin, etc)
 ```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu <codename> stable"
 sudo apt install docker-ce docker-compose
 ```
 **__NOTE:__** Replace `<codename>` with your OS codename(xenial, bionic, etc)
-##### YUM (Pre 8 CENTOS and RHEL)
+#### YUM (Pre 8 CENTOS and RHEL)
 ```bash
 sudo yum-utils device-mapper-persistent-data lvm2 epel-release
 sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 sudo yum install docker-ce docker-compose
 ```
-##### DNF (8+ CENTOS and RHEL, FEDORA)
+#### DNF (8+ CENTOS and RHEL, FEDORA)
 ```bash
 sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
 sudo dnf install docker-ce docker-compose
 ```
-##### PACMAN (Arch, Manjaro)
+#### PACMAN (Arch, Manjaro)
 ```bash
 sudo pacman -Sy docker docker-compose
 ```
