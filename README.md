@@ -21,7 +21,7 @@ sudo yum install docker-ce docker-compose
 ```
 #### DNF (8+ CENTOS and RHEL, FEDORA)
 ```bash
-sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
+sudo dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 sudo dnf install docker-ce docker-compose
 ```
 #### PACMAN (Arch, Manjaro)
