@@ -57,13 +57,13 @@ docker-compose up -d
 The project is currently configured to forward port 3000 of the web application container to the host.  You should be able to access the application by pointing your web browser to `localhost:3000`
 
 ## Rebuilding Project
-Rebuild project cached images:
+Rebuild project using cached images:
 ```bash
 docker stop $(docker ps -a -q)
 docker-compose build
 docker-compose up
 ```
-Rebuild project without cached images:
+Rebuild project without using cached images:
 ```bash
 docker stop $(docker ps -a -q)
 docker system prune -af
