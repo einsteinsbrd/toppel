@@ -6,8 +6,6 @@ RUN dnf install npm -y
 
 COPY toppel/ /app/
 
-RUN npm install
-
 EXPOSE 3000
 
-ENTRYPOINT npm start
+ENTRYPOINT npm install && npm start
