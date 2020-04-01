@@ -4,11 +4,6 @@ services:
     build:
       context: ./toppel-db
       dockerfile: Dockerfile
-    restart_policy:
-      condition: on-failure
-      delay: 5s
-      max_attempts: 3
-      window: 120s
   web:
     build:
       context: ./toppel-web
@@ -19,8 +14,3 @@ services:
       - "db"
     volumes:
       - ./toppel-web/toppel:/app:rw
-    restart_policy:
-      condition: on-failure
-      delay: 5s
-      max_attempts: 3
-      window: 120s
